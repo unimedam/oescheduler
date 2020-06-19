@@ -1,0 +1,36 @@
+{
+  "name": "oescheduler",
+  "version": "1.0.0",
+  "description": "⏰",
+  "main": "index.js",
+  "scripts": {
+    "tsc:init": "tsc --init",
+    "tsc": "tsc",
+    "tsc:watch": "tsc -w",
+    "dev": "ts-node-dev --transpileOnly --ignore-watch node_modules --respawn src/index.ts",
+    "start": "tsc && pm2 start dist/index.js --name OEScheduler",
+    "monit": "pm2 monit",
+    "stop": "pm2 stop all",
+    "delete": "pm2 delete all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unimedam/oescheduler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unimedam/oescheduler/issues"
+  },
+  "homepage": "https://github.com/unimedam/oescheduler#readme",
+  "devDependencies": {
+    "pm2": "^4.4.0",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.49",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "@types/node": "^14.0.13"
+  }
+}
