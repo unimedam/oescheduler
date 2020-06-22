@@ -1,4 +1,8 @@
 node_modules
 dist/*
+scripts/*
 
 !dist/.gitkeep
+!scripts/.gitkeep
+
+.env
